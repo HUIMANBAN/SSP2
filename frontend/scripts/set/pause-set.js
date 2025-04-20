@@ -21,6 +21,7 @@ function changePauseSubmitStatus() {
 
 function pausePost() {
     changePauseSubmitStatus();
+    Iframe.contentWindow.location.reload();
     axios.post("/set/pauseData", {
         headerText: Header.value,
         describeText: Describe.value

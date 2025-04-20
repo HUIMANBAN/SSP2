@@ -89,6 +89,7 @@ function changeLoadingSubmitStatus() {
 
 function loadingPost() {
     changeLoadingSubmitStatus();
+    Iframe.contentWindow.location.reload();
     const dataStr = Time.value;
     let timestamp = new Date(dataStr).getTime();
 
